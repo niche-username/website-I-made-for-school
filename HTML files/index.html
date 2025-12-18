@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- this defines what the favicon and the website title is-->
+<title>Tuff ahh website</title>
+<link rel="icon" type="image/x-icon" href="jhon.png">
+
+</head>
+<body>
+<!-- this defines what image is going to be used for the background -->
+<style> 
+body {
+  background-image: url('bart.jpeg');
+}
+</style>
+<!-- this defines the padding and border for the einstein button -->
+<style>
+.jhonpork {
+ padding: 0px;
+ border: none;
+ cursor: pointer;
+}
+</style>
+<!-- this defines what color the width and background color is going to be in the div wth the tuff class -->
+<style>
+.tuff {
+  background-color: #FFF4A3;
+  width:400px;
+  margin:auto;
+}
+</style>
+
+<div class="tuff">
+<!-- this defines what text and what style of text will be shown in the division-->
+<h1 style="text-align:center;">This is a website about me that I made for school</h1>
+<p style="text-align:center;">Things I like:</p>
+<ul style="text-align:center;"> <li><mark>My cats</mark></li> <li><b>Drawing</b></li> <li style="font-family:courier;">My friends</li> <li style="color:red;">Camping</li> </ul>
+
+
+<!-- this defines the play audio function to make it play audio with the myAudio id-->
+ <script>
+function playAudio() {
+  var audio = document.getElementById("myAudio");
+  audio.play();
+}
+</script>
+
+
+<!-- this defines what audio file will be used and the audio id -->
+<audio id="myAudio">
+      <source src="dry-fart.mp3" type="audio/mpeg">
+      <source src="dry-fart.ogg" type="audio/ogg">
+    </audio>
+<!-- this defines what the button does when clicked and what the graphics on the button are -->
+<button class="jhonpork" onclick="playAudio()"><img src="ablert.jpg"></button>
+<!-- this defines what the link says and what website it links to-->
+<a href="https://www.hersheyland.com/shaqalicious" style="text-align:center;font-size:1px;" >Yummy Surprise</a>
+
+
+<!-- this is just some text -->
+<p> these are pictures of me:</p>
+
+</div>
+
+<!-- this makes sure that the coolguy division's divisions are split up into a grid of three -->
+<style>
+.coolguy {
+  display: grid;
+  grid-template-columns: auto auto auto;  
+}
+</style>
+
+<!-- this division is the coolguy division and contains all the cool images of me-->
+<div class="coolguy">
+  <div><img src="PXL_20250517_205402779.jpg" alt="cool guy" style="width:480px;height:700px;">
+</div>
+  <div>
+<img src="PXL_20251115_180719523.MP.jpg" alt="cool guy" style="width:480px;height:700px;">
+</div>
+  <div><img src="PXL_20250120_202129498.jpg" alt="cool guy" style="width:480px;height:700px;">
+</div>
+</div>
+
+<!-- This centers the iframe-->
+<style>
+.guyquest {
+  margin:auto;
+  width: 300px
+}
+</style>
+<!-- This is the guyquest game i made-->
+<div class="guyquest">
+<iframe width="480" height="390" frameBorder=0 allowfullscreen allow="geolocation; microphone; camera" title="Guy Quest Snap! Project" src="https://snap.berkeley.edu/embed?projectname=Guy%20Quest&username=zaneloukascoding&showTitle=true&showAuthor=true&editButton=true&pauseButton=true"> </iframe>
+</div>
+
+<div class="clowned">
+<script>
+  function clown() {
+var audio= document.getElementById("cameraclick");
+audio.play();
+window.open("file:///Users/zaneloukas/Desktop/HTML%20files/clowned/clowned.html", "_blank");
+  }
+</script>
+<audio id="cameraclick">
+  <source src="camera.mp3" type="audio/mp3">
+</audio>
+  <button style="background-color: rgb(255, 0, 0);" onclick="clown()">take a selfie</button>
+
+</div>
+
+</body>
+</html>
